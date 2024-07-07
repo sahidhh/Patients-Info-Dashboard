@@ -1,0 +1,40 @@
+
+.content-patients-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 24px;
+  }
+  
+  .content-patients-list {
+    height: 75vh;
+    overflow: auto;
+  }
+  
+  .content-patients-list::-webkit-scrollbar {
+    width: 5px;
+  }
+  .content-patients-list::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
+  }
+  .content-patients-list::-webkit-scrollbar-track {
+    background: lightgrey;
+    border-radius: 5px;
+  }
+  
+  .content-patients-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px;
+  }
+  
+  .content-patients-list-item-data {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .content-patients-list-item:hover {
+    background-color: #d8fcf7;
+  }
+  

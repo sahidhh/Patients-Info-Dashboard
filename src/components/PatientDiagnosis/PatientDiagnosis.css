@@ -1,0 +1,93 @@
+.content-middle-section {
+  width: 45%;
+  height: 90dvh;
+}
+
+.content-diagnosis-container {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.diagnosis-history-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.diagnosis-info {
+  border-radius: 10px;
+  padding: 16px;
+  width: 32%;
+}
+
+.diagnosis-respiratory-rate {
+  background-color: #e0f3fa;
+}
+
+.diagnosis-temperature {
+  background-color: #ffe6e9;
+}
+
+.diagnosis-heart-rate {
+  background-color: #ffe6f1;
+}
+
+.blood-pressure-chart{
+  display: flex;
+  align-items: center;  
+  justify-content: space-around;
+  background-color: #F4F0FE;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+  height: 250px;
+}
+
+.blood-pressure-chart-left{
+  /* height: 298px; */
+}
+
+.blood-pressure-chart-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #072635;
+}
+
+.blood-pressure-chart-legend{
+  display: flex;
+  align-items: center;
+}
+
+.blood-pressure-chart-legend>h5{
+  margin-left: 5px;
+}
+
+.blood-pressure-chart-legend-circle{
+  height: 10px;
+  width: 10px;
+  background-color: black;
+  border-radius: 10px;
+  outline: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.systolic-legend-circle{
+  background-color: #E66FD2;
+}
+
+.diastolic-legend-circle{
+  background-color: #8C6FE6;
+}
+
+.blood-pressure-chart-rate{
+  font-size: 25px;
+}
+
+.blood-pressure-chart-right-item>p{
+  font-size: 12px;
+}
+
+.ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+  border: none;
+  outline: none;
+  background: none;
+}

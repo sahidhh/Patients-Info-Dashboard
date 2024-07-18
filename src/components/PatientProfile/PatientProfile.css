@@ -1,0 +1,49 @@
+.content-patient-profile-container {
+  width: 25%;
+}
+
+.content-patient-profile-top {
+  text-align: center;
+}
+
+.content-patient-profile-top > img {
+  height: 200px;
+  width: auto;
+}
+
+.content-patient-profile-top > h3 {
+  padding: 5px;
+  margin: 10px;
+  font-size: large;
+}
+
+.content-patient-profile-bio-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.content-patient-profile-bio-item > img {
+  height: 42px;
+  width: auto;
+}
+
+.content-patient-more-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-patient-more-info > button {
+  background-color: #01f0d0;
+  border: none;
+  height: 41px;
+  width: 220px;
+  border-radius: 41px;
+  margin: 10px;
+}
+
+.content-patient-more-info > button:hover {
+  background-color: #3ee3cd;
+}

@@ -26,7 +26,7 @@ export const Navbar = () => {
       }}
     >
       <div className="header-logo">
-        <img src=".\src\assets\TestLogo.svg" alt="" />
+        <img src=".\public\assets\TestLogo.svg" alt="" />
       </div>
       <Menu
         theme="dark"
@@ -42,7 +42,7 @@ export const Navbar = () => {
             <Avatar
               size={"large"}
               src={
-                "./src/assets/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc@2x.png"
+                "./public/assets/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc@2x.png"
               }
             />
           </div>
@@ -54,13 +54,13 @@ export const Navbar = () => {
         <div className="header-user-options">
           <div className="header-user-options-settings">
             <img
-              src=".\src\assets\settings_FILL0_wght300_GRAD0_opsz24.svg"
+              src=".\public\assets\settings_FILL0_wght300_GRAD0_opsz24.svg"
               alt=""
             />
           </div>
           <div className="header-user-options-more">
             <img
-              src=".\src\assets\more_vert_FILL0_wght300_GRAD0_opsz24.svg"
+              src=".\public\assets\more_vert_FILL0_wght300_GRAD0_opsz24.svg"
               alt=""
             />
           </div>

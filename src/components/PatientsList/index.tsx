@@ -32,7 +32,7 @@ export const PatientsList = () => {
           </div>
           <div className="content-patients-list-item-options">
             <img
-              src="src\assets\more_horiz_FILL0_wght300_GRAD0_opsz24.svg"
+              src=".\src\assets\more_horiz_FILL0_wght300_GRAD0_opsz24.svg"
               alt=""
             />
           </div>
@@ -46,7 +46,10 @@ export const PatientsList = () => {
       <div className="content-patients-header">
         <h2>Patients</h2>
         <div>
-          <img src="src\assets\search_FILL0_wght300_GRAD0_opsz24.svg" alt="" />
+          <img
+            src=".\src\assets\search_FILL0_wght300_GRAD0_opsz24.svg"
+            alt=""
+          />
         </div>
       </div>
       <div className="content-patients-list">{patientsListData}</div>

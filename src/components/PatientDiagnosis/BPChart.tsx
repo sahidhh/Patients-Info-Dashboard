@@ -54,11 +54,6 @@ export const BPChart = () => {
     plugins: {
       legend: {
         display: false,
-        // labels: {
-        //   font: {
-        //     size: 5,
-        //   },
-        // },
       },
     },
     scales: {
@@ -78,11 +73,7 @@ export const BPChart = () => {
   };
   return (
     <div>
-      <Line
-        data={data}
-        options={options}
-        // style={{ width: "100", height: "" }}
-      />
+      <Line data={data} options={options} />
     </div>
   );
 };

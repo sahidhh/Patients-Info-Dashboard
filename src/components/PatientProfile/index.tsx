@@ -15,7 +15,7 @@ export const PatientProfile = () => {
         </div>
         <div className="patient-profile-bio">
           <div className="patient-profile-bio-item">
-            <img src="src\assets\BirthIcon@2x.png" alt="" />
+            <img src=".\src\assets\BirthIcon@2x.png" alt="" />
             <div>
               <p className="patient-profile-bio-item-title">Date of Birth</p>
               <p className="patient-profile-bio-item-value">
@@ -27,8 +27,8 @@ export const PatientProfile = () => {
             <img
               src={
                 patientBio?.gender === "Female"
-                  ? "src/assets/FemaleIcon@2x.png"
-                  : "src/assets/MaleIcon.svg"
+                  ? "./src/assets/FemaleIcon@2x.png"
+                  : "./src/assets/MaleIcon.svg"
               }
               alt=""
             />
@@ -40,7 +40,7 @@ export const PatientProfile = () => {
             </div>
           </div>
           <div className="patient-profile-bio-item">
-            <img src="src\assets\PhoneIcon.svg" alt="" />
+            <img src=".\src\assets\PhoneIcon.svg" alt="" />
             <div>
               <p className="patient-profile-bio-item-title">Contact Info.</p>
               <p className="patient-profile-bio-item-value">
@@ -49,7 +49,7 @@ export const PatientProfile = () => {
             </div>
           </div>
           <div className="patient-profile-bio-item">
-            <img src="src\assets\PhoneIcon.svg" alt="" />
+            <img src=".\src\assets\PhoneIcon.svg" alt="" />
             <div>
               <p className="patient-profile-bio-item-title">
                 Emergency Contacts
@@ -60,7 +60,7 @@ export const PatientProfile = () => {
             </div>
           </div>
           <div className="patient-profile-bio-item">
-            <img src="src\assets\InsuranceIcon.svg" alt="" />
+            <img src=".\src\assets\InsuranceIcon.svg" alt="" />
             <div>
               <p className="patient-profile-bio-item-title">
                 Insurance Provider

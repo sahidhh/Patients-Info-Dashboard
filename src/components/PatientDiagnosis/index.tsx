@@ -95,7 +95,7 @@ export const PatientDiagnosis = () => {
           <div className="diagnosis-history-info">
             <div className="diagnosis-info diagnosis-respiratory-rate">
               <div className="diagnosis-info-icon">
-                <img src=".\public\assets\respiratory rate.svg" alt="" />
+                <img src="\assets\respiratory rate.svg" alt="" />
               </div>
               <div className="diagnosis-info-detail">
                 <p>Respiratory Rate</p>
@@ -107,7 +107,7 @@ export const PatientDiagnosis = () => {
             </div>
             <div className="diagnosis-info diagnosis-temperature">
               <div className="diagnosis-info-icon">
-                <img src=".\public\assets\temperature.svg" alt="" />
+                <img src="\assets\temperature.svg" alt="" />
               </div>
               <div className="diagnosis-info-detail">
                 <p>Temperature</p>
@@ -119,7 +119,7 @@ export const PatientDiagnosis = () => {
             </div>
             <div className="diagnosis-info diagnosis-heart-rate">
               <div className="diagnosis-info-icon">
-                <img src=".\public\assets\HeartBPM.svg" alt="" />
+                <img src="\assets\HeartBPM.svg" alt="" />
               </div>
               <div className="diagnosis-info-detail">
                 <p>Heart Rate</p>

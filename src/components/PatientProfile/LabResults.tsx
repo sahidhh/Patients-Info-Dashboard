@@ -15,7 +15,7 @@ const LabResults = () => {
           <div className="lab-result-item">
             <p>{result}</p>
             <img
-              src=".\public\assets\download_FILL0_wght300_GRAD0_opsz24 (1).svg"
+              src="\assets\download_FILL0_wght300_GRAD0_opsz24 (1).svg"
               alt=""
             />
           </div>

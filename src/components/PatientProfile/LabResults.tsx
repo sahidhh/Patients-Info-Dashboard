@@ -11,7 +11,7 @@ const LabResults = () => {
     <div className="lab-results-container">
       <h2>Lab Results</h2>
       <div className="lab-results-list">
-        {data?.map((result: string, index: number) => (
+        {data?.map((result: string) => (
           <div className="lab-result-item">
             <p>{result}</p>
             <img

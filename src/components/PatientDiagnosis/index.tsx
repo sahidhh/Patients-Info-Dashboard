@@ -3,6 +3,13 @@ import { BPChart } from "./BPChart";
 import { ConfigProvider, Select, Table } from "antd";
 import { usePatientsRecords } from "../../contexts/PatientsContext";
 
+type diagnosticListType = {
+  key: number;
+  diagnosis: string;
+  description: string;
+  status: string;
+};
+
 export const PatientDiagnosis = () => {
   const { getDiagnosisHistory, getDiagnosticList } = usePatientsRecords();
   const {
@@ -13,7 +20,7 @@ export const PatientDiagnosis = () => {
     temperature,
   } = getDiagnosisHistory();
 
-  const data = [];
+  const data: diagnosticListType[] = [];
 
   getDiagnosticList()?.forEach(({ name, description, status }, index) => {
     data.push({

@@ -15,14 +15,14 @@ export const Navbar = () => {
     <Header
       style={{
         position: "sticky",
-        margin: "15px",
+        margin: "16px 16px 8 px 16px",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
         borderRadius: "50px",
         backgroundColor: "white",
         height: "55px",
-        padding: "0 6px",
+        padding: "0 10px",
       }}
     >
       <div className="header-logo">

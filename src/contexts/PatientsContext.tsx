@@ -10,7 +10,34 @@ export interface PatientsRecord {
   phone_number: string;
   emergency_contact: string;
   insurance_type: string;
-  diagnosis_history: [];
+  diagnosis_history: [
+    {
+      month: "March";
+      year: 2024;
+      blood_pressure: {
+        systolic: {
+          value: number;
+          levels: string;
+        };
+        diastolic: {
+          value: number;
+          levels: string;
+        };
+      };
+      heart_rate: {
+        value: number;
+        levels: string;
+      };
+      respiratory_rate: {
+        value: number;
+        levels: string;
+      };
+      temperature: {
+        value: number;
+        levels: string;
+      };
+    }
+  ];
   diagnostic_list: [];
   lab_results: [];
 }

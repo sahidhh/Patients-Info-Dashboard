@@ -1,6 +1,6 @@
 .content-middle-section {
-  width: 45%;
-  /* height: 90dvh; */
+  width: 46%;
+  min-width: 450px;
 }
 
 .content-diagnosis-container {
@@ -11,7 +11,6 @@
 
 .diagnosis-history {
   padding: 24px !important;
-  min-height: 380;
   background: white;
   border-radius: 8px;
 }
@@ -25,6 +24,11 @@
   border-radius: 10px;
   padding: 16px;
   width: 32%;
+}
+
+.diagnosis-info-detail > p {
+  font: normal normal medium 16px/22px "Manrope";
+  font-weight: 600;
 }
 
 .diagnosis-respiratory-rate {
@@ -42,12 +46,19 @@
 .blood-pressure-chart {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  gap: 16px;
   background-color: #f4f0fe;
   border-radius: 10px;
   padding: 16px;
   margin: 16px 0;
-  height: 250px;
+  height: 298px;
+}
+
+.blood-pressure-chart-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 60%;
 }
 
 .blood-pressure-chart-header {
@@ -55,6 +66,11 @@
   justify-content: space-between;
   align-items: center;
   color: #072635;
+  font: normal normal bold 18px/24px "Manrope";
+}
+
+.blood-pressure-chart-right-item {
+  margin: 16px;
 }
 
 .blood-pressure-chart-legend {
@@ -64,6 +80,7 @@
 
 .blood-pressure-chart-legend > h5 {
   margin-left: 5px;
+  font: normal normal bold 14px/19px "Manrope";
 }
 
 .blood-pressure-chart-legend-circle {
@@ -83,11 +100,11 @@
 }
 
 .blood-pressure-chart-rate {
-  font-size: 25px;
+  font: normal normal bold 22px/30px "Manrope";
 }
 
 .blood-pressure-chart-right-item > p {
-  font-size: 12px;
+  font: normal normal normal 14px/19px "Manrope";
 }
 
 .ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
@@ -103,7 +120,7 @@
   border-radius: 8px;
 }
 
-.diagnosis-list>h2{
+.diagnosis-list > h2 {
   margin-bottom: 10px;
 }
 
@@ -132,14 +149,9 @@
   display: none;
 }
 
-/* .ant-table-tbody > tr > td.ant-table-cell {
-  border: none !important;
-  padding: 10px !important;
-} */
-
 .ant-table-body {
   scrollbar-width: auto;
-  scrollbar-color: auto;    
+  scrollbar-color: auto;
 }
 
 .ant-table-body::-webkit-scrollbar {

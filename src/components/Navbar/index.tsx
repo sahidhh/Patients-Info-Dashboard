@@ -22,7 +22,7 @@ export const Navbar = () => {
         borderRadius: "50px",
         backgroundColor: "white",
         height: "55px",
-        padding: "0 10px",
+        padding: "0 6px",
       }}
     >
       <div className="header-logo">

@@ -42,18 +42,9 @@ export const PatientsList = () => {
   );
 
   return (
-    <div
-      className="content-patients-container"
-      style={{
-        minHeight: 380,
-        background: "#ffffff",
-        borderRadius: "8px",
-        width: "25%",
-        padding: "5px",
-      }}
-    >
+    <div className="content-patients-container">
       <div className="content-patients-header">
-        <h3>Patients</h3>
+        <h2>Patients</h2>
         <div>
           <img src="src\assets\search_FILL0_wght300_GRAD0_opsz24.svg" alt="" />
         </div>

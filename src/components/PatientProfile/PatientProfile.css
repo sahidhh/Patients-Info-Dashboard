@@ -1,48 +1,59 @@
-.patient-profile-section{
+.content-patient-profile-section {
   display: flex;
   flex-direction: column;
   width: 25%;
   gap: 32px;
 }
 
-.content-patient-profile-container {
-  
+.patient-profile-container {
+  padding: 16px;
+  background-color: #ffffff !important;
+  border-radius: 8px;
 }
 
-.content-patient-profile-top {
-  text-align: center;
+.patient-profile-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
 }
 
-.content-patient-profile-top > img {
+.patient-profile-top > img {
   height: 200px;
   width: auto;
 }
 
-.content-patient-profile-top > h3 {
+.patient-profile-top > h3 {
   padding: 5px;
   margin: 10px;
   font-size: large;
 }
 
-.content-patient-profile-bio-item {
+.patient-profile-bio-item {
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 10px 0;
 }
 
-.content-patient-profile-bio-item > img {
+.patient-profile-bio-item > img {
   height: 42px;
   width: auto;
 }
 
-.content-patient-more-info {
+.patient-profile-bio-item-value {
+  font: normal normal bold 14px/19px "Manrope";
+}
+
+.patient-more-info {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.content-patient-more-info > button {
+.patient-more-info > button {
   background-color: #01f0d0;
   border: none;
   height: 41px;
@@ -51,6 +62,6 @@
   margin: 10px;
 }
 
-.content-patient-more-info > button:hover {
+.patient-more-info > button:hover {
   background-color: #3ee3cd;
 }

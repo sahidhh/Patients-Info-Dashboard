@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <Content
         style={{
-          padding: "0 18px",
+          padding: "18px",
           display: "flex",
           justifyContent: "space-between",
         }}

@@ -28,12 +28,12 @@ export const PatientDiagnosis = () => {
     {
       title: "Problem/Diagnosis",
       dataIndex: "diagnosis",
-      width: 150,
+      width: "27%",
     },
     {
       title: "Description",
       dataIndex: "description",
-      width: 150,
+      width: "45%",
     },
     {
       title: "Status",

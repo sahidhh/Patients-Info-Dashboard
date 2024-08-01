@@ -35,14 +35,14 @@ export const BPChart = () => {
       {
         label: "Systolic",
         backgroundColor: "#C26EB4",
-        borderColor: "#C26EB4",
+        borderColor: "#E66FD2",
         data: patient.blood_pressure_systolic.value.slice(0.6),
         tension: 0.4,
       },
       {
         label: "Diastolic",
-        backgroundColor: "#8C6FE6",
-        borderColor: "#7E6CAB",
+        backgroundColor: "#7E6CAB",
+        borderColor: "#8C6FE6",
         data: patient.blood_pressure_diastolic.value.slice(0.6),
         tension: 0.4,
       },
@@ -81,7 +81,7 @@ export const BPChart = () => {
       <Line
         data={data}
         options={options}
-        style={{ width: "100%", height: "auto" }}
+        // style={{ width: "100", height: "" }}
       />
     </div>
   );

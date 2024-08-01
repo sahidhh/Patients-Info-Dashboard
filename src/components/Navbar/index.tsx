@@ -15,7 +15,7 @@ export const Navbar = () => {
     <Header
       style={{
         position: "sticky",
-        margin: "16px 16px 8 px 16px",
+        margin: "16px 16px 8px 16px",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",

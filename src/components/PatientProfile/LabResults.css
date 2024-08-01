@@ -1,0 +1,37 @@
+.lab-results-container {
+  width: 100% !important;
+  height: 296px !important;
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.lab-results-list {
+  height: 230px;
+  overflow: auto;
+}
+
+.lab-result-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 12px;
+  margin: 2px 5px;
+}
+
+.lab-result-item:hover {
+  background-color: #f6f7f8;
+}
+
+.lab-results-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.lab-results-list::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5px;
+}
+
+.lab-results-list::-webkit-scrollbar-track {
+  background: lightgrey;
+  border-radius: 5px;
+}

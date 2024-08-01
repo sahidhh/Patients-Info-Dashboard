@@ -1,11 +1,19 @@
 .content-middle-section {
   width: 45%;
-  height: 90dvh;
+  /* height: 90dvh; */
 }
 
 .content-diagnosis-container {
-  background-color: white;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.diagnosis-history {
+  padding: 24px !important;
+  min-height: 380;
+  background: white;
+  border-radius: 8px;
 }
 
 .diagnosis-history-info {
@@ -31,38 +39,34 @@
   background-color: #ffe6f1;
 }
 
-.blood-pressure-chart{
+.blood-pressure-chart {
   display: flex;
-  align-items: center;  
+  align-items: center;
   justify-content: space-around;
-  background-color: #F4F0FE;
+  background-color: #f4f0fe;
   border-radius: 10px;
   padding: 16px;
   margin: 16px 0;
   height: 250px;
 }
 
-.blood-pressure-chart-left{
-  /* height: 298px; */
-}
-
-.blood-pressure-chart-header{
+.blood-pressure-chart-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #072635;
 }
 
-.blood-pressure-chart-legend{
+.blood-pressure-chart-legend {
   display: flex;
   align-items: center;
 }
 
-.blood-pressure-chart-legend>h5{
+.blood-pressure-chart-legend > h5 {
   margin-left: 5px;
 }
 
-.blood-pressure-chart-legend-circle{
+.blood-pressure-chart-legend-circle {
   height: 10px;
   width: 10px;
   background-color: black;
@@ -70,19 +74,19 @@
   outline: 1px solid rgba(0, 0, 0, 0.164);
 }
 
-.systolic-legend-circle{
-  background-color: #E66FD2;
+.systolic-legend-circle {
+  background-color: #e66fd2;
 }
 
-.diastolic-legend-circle{
-  background-color: #8C6FE6;
+.diastolic-legend-circle {
+  background-color: #8c6fe6;
 }
 
-.blood-pressure-chart-rate{
+.blood-pressure-chart-rate {
   font-size: 25px;
 }
 
-.blood-pressure-chart-right-item>p{
+.blood-pressure-chart-right-item > p {
   font-size: 12px;
 }
 
@@ -90,4 +94,64 @@
   border: none;
   outline: none;
   background: none;
+}
+
+.diagnosis-list {
+  padding: 24px !important;
+  min-height: 380;
+  background: white;
+  border-radius: 8px;
+}
+
+.diagnosis-list>h2{
+  margin-bottom: 10px;
+}
+
+.ant-table-thead .ant-table-cell {
+  background-color: #f6f7f8 !important;
+  padding: 12px !important;
+  border: none !important;
+}
+
+.ant-table-thead .ant-table-cell:first-child {
+  border-top-left-radius: 25px !important;
+  border-bottom-left-radius: 25px;
+}
+
+.ant-table-thead .ant-table-cell:nth-last-child(2) {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+:where(.css-dev-only-do-not-override-1g8xl7s).ant-table-wrapper
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  > *:last-child {
+  display: none;
+}
+
+/* .ant-table-tbody > tr > td.ant-table-cell {
+  border: none !important;
+  padding: 10px !important;
+} */
+
+.ant-table-body {
+  scrollbar-width: auto;
+  scrollbar-color: auto;    
+}
+
+.ant-table-body::-webkit-scrollbar {
+  width: 4px;
+}
+
+.ant-table-body::-webkit-scrollbar-track {
+  background-color: #e3e4e6;
+  border-radius: 6px;
+}
+
+.ant-table-body::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #072635;
 }

@@ -7,6 +7,9 @@ import { PatientProfile } from "./components/PatientProfile";
 import { PatientDiagnosis } from "./components/PatientDiagnosis";
 
 function App() {
+  // const { getDiagnosisHistory } = usePatientsRecords();
+  // getDiagnosisHistory("Emily Williams");
+
   return (
     <Layout>
       <Navbar />

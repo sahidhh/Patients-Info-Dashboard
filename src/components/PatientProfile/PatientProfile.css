@@ -1,5 +1,12 @@
-.content-patient-profile-container {
+.patient-profile-section{
+  display: flex;
+  flex-direction: column;
   width: 25%;
+  gap: 32px;
+}
+
+.content-patient-profile-container {
+  
 }
 
 .content-patient-profile-top {

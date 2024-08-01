@@ -10,6 +10,7 @@ import {
   scales,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
+import { usePatientsRecords } from "../../contexts/PatientsContext";
 
 ChartJS.register(
   CategoryScale,
@@ -22,27 +23,32 @@ ChartJS.register(
   scales
 );
 
-const labels = ["January", "February", "March", "April", "May", "June"];
-const data = {
-  labels: labels,
-  datasets: [
-    {
-      label: "My First dataset",
-      backgroundColor: "#C26EB4",
-      borderColor: "#C26EB4",
-      data: [0, 10, 5, 2, 20, 30, 45],
-      tension: 0.3,
-    },
-    {
-      label: "My First dataset",
-      backgroundColor: "#8C6FE6",
-      borderColor: "#7E6CAB",
-      data: [0, 30, 15, 42, 20, 10, 45],
-      tension: 0.4,
-    },
-  ],
-};
 export const BPChart = () => {
+  const { getDiagnosisHistory } = usePatientsRecords();
+  const patient = getDiagnosisHistory();
+
+  const labels = patient.date.slice(0, 6);
+
+  const data = {
+    labels: labels,
+    datasets: [
+      {
+        label: "Systolic",
+        backgroundColor: "#C26EB4",
+        borderColor: "#C26EB4",
+        data: patient.blood_pressure_systolic.value.slice(0.6),
+        tension: 0.4,
+      },
+      {
+        label: "Diastolic",
+        backgroundColor: "#8C6FE6",
+        borderColor: "#7E6CAB",
+        data: patient.blood_pressure_diastolic.value.slice(0.6),
+        tension: 0.4,
+      },
+    ],
+  };
+
   const options = {
     responsive: true,
     plugins: {
@@ -75,7 +81,7 @@ export const BPChart = () => {
       <Line
         data={data}
         options={options}
-        style={{ width: "100%", height:"auto" }}
+        style={{ width: "100%", height: "auto" }}
       />
     </div>
   );

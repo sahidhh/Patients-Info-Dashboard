@@ -32,7 +32,7 @@ export const PatientsList = () => {
           </div>
           <div className="content-patients-list-item-options">
             <img
-              src=".\public\assets\more_horiz_FILL0_wght300_GRAD0_opsz24.svg"
+              src={"./public/assets/more_horiz_FILL0_wght300_GRAD0_opsz24.svg"}
               alt=""
             />
           </div>
